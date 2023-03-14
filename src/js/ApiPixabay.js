@@ -7,6 +7,7 @@ export class ApiPixabay {
     this.page = 1;
     this.perPage = 40;
   }
+
   async getImages() {
     return axios.get(this.#BASE_URL, {
       params: {

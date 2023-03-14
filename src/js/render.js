@@ -11,19 +11,19 @@ export function renderImages(array, ref) {
         downloads,
       }) => `
     <a href=${largeImageURL} class="photo-card">
-  <img src="${webformatURL}" alt="${tags}" height="150" loading="lazy" />
+  <div class="img-box"> <img class="image" src="${webformatURL}" alt="${tags}" height="150" loading="lazy" /></div>
   <div class="info">
     <p class="info-item">
-      <b>Likes: ${likes}</b>
+      <b>Likes: <span class="value"> ${likes}</span></b>
     </p>
     <p class="info-item">
-      <b>Views: ${views}</b>
+      <b>Views: <span class="value"> ${views}</span></b>
     </p>
     <p class="info-item">
-      <b>Comments: ${comments}</b>
+      <b>Comments: <span class="value"> ${comments}</span></b>
     </p>
     <p class="info-item">
-      <b>Downloads: ${downloads}</b>
+      <b>Downloads: <span class="value"> ${downloads}</span></b>
     </p>
   </div>
 </a>
